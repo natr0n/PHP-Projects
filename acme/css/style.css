@@ -1,0 +1,524 @@
+/* 
+    Created on : May 3, 2018, 12:11:55 AM
+    Author     : nate
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Chivo');
+
+html {
+    background: url(/acme/images/site/background.jpg) no-repeat center center fixed; 
+ 
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+/* This block is specificly for the styles of the product pages */
+*, *:before, *:after{
+ box-sizing: inherit;
+}
+
+/*Product display styles using ID's */
+#prod-display{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+}
+#prod-display li{
+ margin-bottom: .5em;
+ border: 1px #ccc solid;
+ list-style-type: none;
+ flex: 1 1 auto;
+}
+#prod-display li img{
+ width: 100%;
+ height: 200px;
+}
+
+/* PRODUCT DETAIL DISPLAY STYLES */
+#prodDetail {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ 
+}
+
+.prodDetailImage{
+    width: 100%;
+    
+}
+
+.prodDetailImage img{
+    width: 400px;
+}
+
+.prodDetailWords{
+    width: 100%;
+    
+    
+}
+
+.productPrice{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* BEGIN MAIN STYLE SHEET*/
+
+.notify {
+    font-size: 25px;
+    font-style: italic;
+}
+
+body {
+    background-color: white;
+  width: fit-content;
+  /*  overflow:hidden;
+    display: flex;
+margin:0 auto;
+    width: 85%;
+   justify-content: center; /*centers items on the line (the x-axis by default)
+   align-items: center; 
+   margin: 0 auto; */
+}
+
+.mainNav {
+  display: -webkit-flex;
+  display: flex;
+  list-style-type: none;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.mainNav li:first-child {
+  margin-right: auto;
+}
+
+.mainNav a {
+  margin: 10px;
+  color: black;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.mainNavLink {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.acmeLogo {
+ max-width: 50%;
+min-width: 100px;
+padding: 10px;
+margin-left: -30px;
+}
+
+
+.accountFolder {
+max-width:18%;
+min-width: 30px;
+float: right;
+padding-top: 25px;
+margin-right: -18px;
+}
+
+
+.account span{
+   
+}
+
+.account {
+ margin-right: -15px;
+ font-family: Boogaloo;
+ font-size: 1.4rem;
+}
+
+
+.secondaryNav ul{
+  background-color: #de2226;
+  display: -webkit-flex;
+  display: flex;
+  list-style-type: none;
+  white-space: nowrap;
+  font-family: Chivo;
+padding-top: 5px;
+padding-left: 4px;
+
+  
+}
+
+.secondaryNav ul a {
+  margin: 5px;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.active{
+ background-color: white;
+ padding: 0px;
+}
+
+.active a{
+    background-color: white;
+    color: #de2226 !important;
+    
+
+}
+
+
+
+main {
+    background: white;
+    margin-top: -10px;
+    
+    
+}
+
+main h1 {
+    font-family: Boogaloo;
+    font-size: 6vw;
+    margin: 0;
+    padding-left: 8px;
+  
+}
+
+hr {
+   height: 5px;
+    background-color: black;
+    
+}
+
+footer {
+    background: white;
+    margin: 0;
+    padding: 0; 
+}
+
+footer p {
+    text-align: center;
+    font-family: Chivo;
+    margin: 0;
+    Padding: 0;
+  
+}
+
+
+/* 
+HOME PAGE CSS CODE
+*/
+
+h3 {
+    padding-left: 10px
+}
+
+.callToAction {
+position:relative;
+text-align: center;
+color: #990033;
+
+}
+
+
+.rocketImage {
+    width: 100%;
+
+}
+
+
+
+.ctaButton {
+    width: 45vw;
+}
+
+
+.rocketText {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 4vw;
+}
+
+.rocketText h2 {
+    font-family: Boogaloo;
+}
+
+.rocketText h2,h3 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+/* SECTION TWO*/
+.sectionTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reviews {
+    
+}
+
+.reviews h2 {
+    font-family: Boogaloo;
+    font-size: 3vw;
+}
+
+.reviews li {
+    font-family: Chivo;
+    font-size: 1.8vw;
+}
+
+/* Section 2 Recipies */
+
+.recipies {
+ 
+}
+
+.recipies h2 {
+    font-family: Boogaloo;
+    font-size: 3vw;
+    padding-left: 10px;
+}
+
+.recipies ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 32px 0;
+}
+
+.recipies ul li a {
+    color: #0000ee;
+}
+
+.recipies p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 999;
+  
+}
+
+.recipies li {
+  
+    flex-basis: calc(50% - 20px);  
+    padding-bottom: 15px;
+    background: #808080;
+    margin: 10px;
+    display: inline-block;
+    padding-bottom: 0;
+
+}
+
+.recipies img{
+     width: 40%;          
+    height: auto;
+    display: block;
+    margin-left: 90px;
+    align-items: center;
+    
+    
+}
+
+.text-color{
+    background: none !important;
+    
+}
+
+
+/* STYLES FOR LOGIN FORM*/
+
+.login-width{
+    width: 40% !important;
+    margin-bottom:10px !important;
+}
+
+.login-width:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#login ul{
+    list-style-type: none;
+    font-family: Chivo;
+}
+
+#login ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+#login button{
+    background-color: #d42430;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 0px 39px;
+    cursor: pointer;
+    font-family: Chivo;
+}
+
+#login a {
+    background-color: #d42430;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 0px 39px;
+    cursor: pointer;
+    font-family: Chivo;
+}
+
+#login p {
+    padding-left: 39px;
+    font-family:Chivo;
+    
+}
+
+#login h2{
+    padding-left: 39px;
+    margin-bottom: 0px;
+    
+}
+
+#login ul li span {
+    font-size: 12px !important;
+}
+
+#login button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 50%;
+    padding: 12px 13px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+
+/* STYLES FOR PRODUCT PAGE */
+.scroll-list {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-right: 50%;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 850px) {
+    body {
+        width: 85%;
+        margin:0 auto;
+    }
+    
+    #prod-display{
+ flex-flow: row wrap;
+ justify-content: flex-start;
+}
+#prod-display li{
+ max-width: 200px;
+ flex: 1 0 auto;
+ text-align: center;
+ max-height: 400px; }
+    
+
+/* PRODUCT DETAIL DISPLAY STYLES */
+#prodDetail {
+    padding: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+ 
+}
+
+.prodDetailImage{
+    width: 50%;
+    
+}
+
+.prodDetailWords{
+    width: 50%;
+    
+    
+}
+
+    
+}
+
+  @media only screen and (min-width: 433px) {
+        .rocketText {
+            font-size: 2vw !important;
+            top: 70px;
+            right: 70px;
+        }
+        
+        .ctaButton{
+            width: 20vw !important;
+        } 
+        
+    }
+    
+    @media only screen and (max-width: 760px) {
+        .sectionTwo{
+             display: flex;
+             flex-direction: column-reverse;
+        }
+        
+        .reviews h2 {
+    font-family: Boogaloo;
+    font-size: 9vw;
+    padding-left: 10px;
+}
+
+.reviews li {
+    font-family: Chivo;
+    font-size: 5vw;
+}
+
+
+.recipies h2 {
+    font-family: Boogaloo;
+    font-size: 9vw;
+    padding-left: 10px;
+}
+
+
+.recipies img{
+     width: 40%;          
+    height: auto;
+    display: block;
+    margin-left: 50px;
+    align-items: center;
+    
+    
+}
+        
+    }

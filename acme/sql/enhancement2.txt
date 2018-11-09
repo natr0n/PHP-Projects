@@ -1,0 +1,35 @@
+
+----- Insert Tony Stark into the clients table------------------
+
+INSERT INTO clients (clientFirstname, clientLastname, clientEmail, clientPassword, comments)
+VALUES ('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n', 'I am the real Ironman')
+
+
+------Modify the Tony Stark record to change the clientLevel to 3------
+UPDATE clients
+SET clientLevel = 3
+WHERE clientFirstname = 'Tony';
+
+
+------------ Modify the "Nylon Rope" record to read "Climbing Rope" using a single query.----------
+UPDATE inventory 
+SET invName = replace(invName, 'Nylon Rope', 'Climbing Rope'),
+invDescription = replace(invDescription, 'nylon rope', 'climbing rope')
+WHERE invId=15
+
+
+
+--------Use an inner join----------
+SELECT inventory.invName, categories.categoryName
+FROM inventory
+INNER JOIN categories ON inventory.categoryId = categories.categoryId
+WHERE categoryName = 'Misc'
+
+
+----------Delete the Koenigsegg CCX car from the database---------
+
+DELETE FROM inventory
+WHERE invName = 'Koenigsegg CCX Car'
+
+
+
